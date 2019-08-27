@@ -14,13 +14,8 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(calls_array)
-  calls_array.all? do |call|
-		if call.length < 4
-			false
-		else
-			true
-		end
-	end
+  calls_array.any? do |call|
+		call.length > 4
 end
 
 def find_the_cheese# code an argument here
