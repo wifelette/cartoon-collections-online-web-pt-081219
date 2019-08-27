@@ -1,7 +1,7 @@
 def roll_call_dwarves(array)
 	list_number = 1
 	array.each do |name|
-  	puts name
+  	puts "#{list_number}. #{name}"
 		list_number +=1
   end
 end
